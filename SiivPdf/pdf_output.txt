@@ -1,0 +1,143 @@
+﻿--- PAGE 1 ---
+Developer Test Task – DB, Logic & Auth Focus
+🎯 Ujeedo
+Test-kan waxaa lagu qiimeynayaa:
+Database design (qaab nadiif ah)
+System logic (company-based thinking)
+Authentication (real, not fake)
+UI muhiim ma aha, laakiin structure waa inuu cad yahay.
+📌 Task Description
+Samee mini system muujinaya qaabkan:
+Hal company (test purpose)
+Admin user
+Projects module (simple)
+Focus: DB + Logic + Auth
+🗄️ Database Requirements
+Samee DB leh tables-kan ugu yar:
+1. users
+id
+name
+email
+password_hash
+role
+status
+2. company_profile
+id
+name
+email
+phone
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+1
+--- PAGE 2 ---
+3. system_config
+id
+construction_enabled (boolean)
+4. projects
+id
+name
+location
+budget
+status
+company_id (important)
+⚙️ Logic Requirements
+User waa inuu login sameyn karaa
+User aan login sameyn karin ma geli karo system
+Project kasta waa inuu la xirnaadaa company
+System-ku waa inuu muujiyo in uu future ahaan multiple companies support karo
+🔐 Auth Requirements
+Login shaqeynaya (email + password)
+Password hash (plain text lama ogola)
+Protected routes (dashboard, projects)
+🧠 Important Requirement (Very Important)
+System-ka waa inuu muujiyo:
+in future company walba DB u gaar ah yeelan karto AMA
+in company_id si sax ah loo isticmaalayo separation ahaan
+Developer-ku waa inuu sharaxaa qaabka uu u doortay.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+2
+--- PAGE 3 ---
+🖥️ UI (Basic Only)
+UI waa basic, laakiin waa inuu leeyahay:
+Login page
+Dashboard (simple counts)
+Projects page (list + add)
+Design muhiim ma aha, laakiin navigation waa inuu cad yahay.
+📦 Deliverables
+Developer-ku waa inuu soo gudbiyaa:
+GitHub repo
+Short explanation (text ama video):
+DB design
+auth flow
+company structure
+⏱️ Deadline
+3 maalmood gudahood
+⚠️ Evaluation Criteria
+Waxaan qiimeyn doonaa:
+DB nadiif ma yahay?
+Auth real ma yahay?
+Logic ma saxan yahay?
+Code structure ma clean yahay?
+❌ Waxa aan la rabin
+Fake auth (form kaliya)
+No DB structure
+Random code
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+3
+--- PAGE 4 ---
+Over-complicated solution
+✅ Goal
+In la arko developer:
+fahmaya system design
+dhisi kara foundation sax ah
+la shaqeyn kara template-based system
+• 
+• 
+• 
+• 
+4
