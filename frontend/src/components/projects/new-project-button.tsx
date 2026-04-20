@@ -31,18 +31,18 @@ type FormValues = z.infer<typeof formSchema>
 export function NewProjectButton() {
   const [open, setOpen] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  
+
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
   } = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(formSchema) as any,
     defaultValues: {
       name: "",
       location: "",
-      budget: undefined,
+      budget: 0,
     }
   })
 
@@ -52,10 +52,10 @@ export function NewProjectButton() {
     formData.append("name", data.name)
     formData.append("location", data.location)
     formData.append("budget", data.budget.toString())
-    
+
     // Server Action Call
     const result = await createProject(formData)
-    
+
     if (result.error) {
       setError(result.error)
     } else {
