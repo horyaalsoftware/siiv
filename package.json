@@ -7,8 +7,9 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspaces --if-present",
-    "build": "npm run build --workspaces --if-present",
-    "lint": "npm run lint --workspaces --if-present"
+    "build": "prisma generate --schema=backend/prisma/schema.prisma && npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "postinstall": "prisma generate --schema=backend/prisma/schema.prisma"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
